@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+.board {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100px;
+    height: 100px;
+    font-size: 36px;
+    border: 1px solid #000;
+    float: left;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: #f0f0f0;
+}
+
+#winning-message {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+button {
+    margin-top: 20px;
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
